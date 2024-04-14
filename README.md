@@ -2,4 +2,4 @@
 
 Simple Keylogger
 
--records and logs keystrokes
+- records and logs keystrokes
